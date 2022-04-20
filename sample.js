@@ -1,4 +1,4 @@
-import adapter from 'webrtc-adapter';
+
 "use strict";
 
 const videoElem = document.getElementById("video");
