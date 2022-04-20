@@ -15,11 +15,11 @@ var displayMediaOptions = {
 };
 
 // Set event listeners for the start and stop buttons
-startElem.addEventListener("click", function(evt) {
+startElem.addEventListener("click", function (evt) {
   startCapture();
 }, false);
 
-stopElem.addEventListener("click", function(evt) {
+stopElem.addEventListener("click", function (evt) {
   stopCapture();
 }, false);
 
@@ -34,7 +34,7 @@ async function startCapture() {
   try {
     videoElem.srcObject = await navigator.mediaDevices.getDisplayMedia(displayMediaOptions);
     dumpOptionsInfo();
-  } catch(err) {
+  } catch (err) {
     console.error("Error: " + err);
   }
 }
