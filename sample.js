@@ -1,3 +1,5 @@
+import adapter from 'webrtc-adapter';
+
 const videoElem = document.getElementById("video");
 const logElem = document.getElementById("log");
 const startElem = document.getElementById("start");
