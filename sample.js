@@ -1,4 +1,3 @@
-
 "use strict";
 
 const videoElem = document.getElementById("video");
