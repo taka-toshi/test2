@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <script src={{ url_for("static", filename="js/sample2.js") }}></script>
+{% endblock %}
+
+
+{% block body %}
+
+    <p><button id="start">Start Capture</button>&nbsp;<button id="stop">Stop Capture</button></p>
+    <video id="video" autoplay></video>
+
+    <strong>Log:</strong>
+    <pre id="log"></pre>
+
+{% endblock %}
